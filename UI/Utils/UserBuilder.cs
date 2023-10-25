@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Test_Automation_Project.Model;
+﻿using Test_Automation_Project.Model;
 
 namespace Test_Automation_Project.Utils
 {
@@ -13,6 +8,6 @@ namespace Test_Automation_Project.Utils
         private static string validPassword = Environment.GetEnvironmentVariable("test-password");
 
         public static User ValidUser() => new User(validUsername, validPassword);
-        
+
     }
 }

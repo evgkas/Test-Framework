@@ -16,7 +16,7 @@ namespace Test_Automation_Project.Pages
             WebDriverExtensions.ClickOnElement(accountButton);
             return new LoginPage();
         }
-        
+
         public MainPage AgreeWithCookies()
         {
             WebDriverExtensions.ClickOnElement(agreeWithCookies);

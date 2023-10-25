@@ -12,7 +12,7 @@ namespace Test_Automation_Project.Tests
     public abstract class BaseTest
     {
         protected static Logger logger;
-        protected static Screenshoter screenshoter;  
+        protected static Screenshoter screenshoter;
         protected static WelcomePage welcomePage = new WelcomePage();
         protected static BasketPage basketPage = new();
         protected static MainPage mainPage = new();
@@ -21,7 +21,7 @@ namespace Test_Automation_Project.Tests
 
         [SetUp]
         public void Setup()
-        {            
+        {
             logger = new Logger();
             screenshoter = new Screenshoter();
             logger.LogInfo(LogLevel.Info, $"Start Test [{TestContext.CurrentContext.Test.Name}]");

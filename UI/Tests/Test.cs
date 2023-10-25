@@ -1,7 +1,4 @@
-﻿using Test_Automation_Project.Pages;
-using Test_Automation_Project.WebDriver;
-
-namespace Test_Automation_Project.Tests
+﻿namespace Test_Automation_Project.Tests
 {
     [TestFixture]
     public class Test : BaseTest
