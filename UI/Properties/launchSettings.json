@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "UI": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "test-username": "AliceTestAcc4587@gmail.com",
+        "test-password": "#AlicePassword1"
+      }
+    }
+  }
+}
