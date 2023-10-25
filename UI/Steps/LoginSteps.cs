@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Test_Automation_Project.Model;
+﻿using Test_Automation_Project.Model;
 using Test_Automation_Project.Pages;
 
 namespace Test_Automation_Project.Steps

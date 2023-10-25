@@ -1,17 +1,17 @@
-﻿using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using static Test_Automation_Project.WebDriver.WebDriverFactory;
 
 namespace Test_Automation_Project.WebDriver
 {
     public class Browser
-    {     
+    {
         private static BrowserType _currentBrowser;
         private static IWebDriver _currentInstance;
         private static IWebDriver webDriver => GetDriver();
 
         private static void InitParams()
-        {            
+        {
             string browserFromConfig = DriverParameterReader.Get("browser");
             Enum.TryParse(browserFromConfig, out _currentBrowser);
         }
@@ -40,7 +40,7 @@ namespace Test_Automation_Project.WebDriver
 
         public static void QuitBrowser()
         {
-            webDriver.Quit();            
+            webDriver.Quit();
             _currentInstance = null;
         }
 
