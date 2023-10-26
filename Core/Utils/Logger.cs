@@ -1,6 +1,6 @@
-﻿using Core.enums;
+﻿using Test_Automation_Project.Core.enums;
 
-namespace Core.Utils
+namespace Test_Automation_Project.Core.Utils
 {
     public class Logger
     {

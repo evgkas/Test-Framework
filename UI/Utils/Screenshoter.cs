@@ -1,5 +1,5 @@
-﻿using Core.Utils;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using Test_Automation_Project.Core.Utils;
 using Test_Automation_Project.WebDriver;
 
 namespace Test_Automation_Project.Utils

@@ -1,6 +1,6 @@
-﻿using Core.enums;
-using Core.Utils;
+﻿using Core.Utils;
 using NUnit.Framework.Interfaces;
+using Test_Automation_Project.Core.enums;
 using Test_Automation_Project.Core.Model;
 using Test_Automation_Project.Core.Utils;
 using Test_Automation_Project.Pages;
@@ -25,7 +25,7 @@ namespace Test_Automation_Project.Tests
         {
             logger = new Logger();
             screenshoter = new Screenshoter();
-            logger.LogInfo(LogLevel.Info, $"Start Test [{TestContext.CurrentContext.Test.Name}]");
+            logger.LogInfo(Core.enums.LogLevel.Info, $"Start Test [{TestContext.CurrentContext.Test.Name}]");
             Browser.WindowMaximize();
             Browser.StartNavigate();
             mainPage.AgreeWithCookies();

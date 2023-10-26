@@ -1,4 +1,4 @@
-﻿namespace Core.enums
+﻿namespace Test_Automation_Project.Core.enums
 {
     public enum LogLevel
     {

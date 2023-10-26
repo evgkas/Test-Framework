@@ -1,4 +1,4 @@
-﻿using Test_Automation_Project.Model;
+﻿using Test_Automation_Project.Core.Model;
 using Test_Automation_Project.Pages;
 
 namespace Test_Automation_Project.Steps
