@@ -1,4 +1,4 @@
-﻿namespace Test_Automation_Project.Model
+﻿namespace Test_Automation_Project.Core.Model
 {
     public class User
     {

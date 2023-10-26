@@ -1,7 +1,8 @@
 ﻿using Core.enums;
 using Core.Utils;
 using NUnit.Framework.Interfaces;
-using Test_Automation_Project.Model;
+using Test_Automation_Project.Core.Model;
+using Test_Automation_Project.Core.Utils;
 using Test_Automation_Project.Pages;
 using Test_Automation_Project.Steps;
 using Test_Automation_Project.Utils;

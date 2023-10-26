@@ -46,7 +46,6 @@ namespace BDD.Hooks
 
             Browser.QuitBrowser();
             driver = null;
-
         }
     }
 }
