@@ -9,6 +9,7 @@ using LogLevel = Test_Automation_Project.Core.enums.LogLevel;
 
 namespace BDD.Hooks
 {
+    [Binding]
     public class Hooks
     {
         protected IWebDriver driver;
@@ -21,7 +22,7 @@ namespace BDD.Hooks
             screenshoter = new Screenshoter();
             driver = Browser.GetDriver();
             Browser.WindowMaximize();
-            Browser.StartNavigate();
+            Browser.NavigateTo("https://www.notino.co.uk/");
             logger = new Logger();
 
             logger.LogInfo(LogLevel.Info, $"Start testcase {TestContext.CurrentContext.Test.Name}");

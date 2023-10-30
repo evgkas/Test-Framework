@@ -1,4 +1,4 @@
-﻿Feature: Feature1
+﻿Feature: SearchingBrand
 
 A short summary of the feature
 

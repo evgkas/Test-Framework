@@ -8,6 +8,7 @@ namespace Test_Automation_Project.Pages
         private static By emailField = By.CssSelector("#Email");
         private static By passwordField = By.CssSelector("#Password");
         private static By submitButton = By.XPath("//*[@data-callback=\"onSubmit\"]");
+        private static By errorMessage = By.XPath("//*[@class=\"message error-message field-validation-error\"]");
 
         public LoginPage EnterEmail(string email)
         {
@@ -25,6 +26,16 @@ namespace Test_Automation_Project.Pages
         {
             WebDriverExtensions.ClickOnElement(submitButton);
             return new AccountPage();
+        }
+
+        public bool IsVisible()
+        {
+            return WebDriverExtensions.IsElementVisible(passwordField);
+        }
+
+        public bool IsCredentialErrorVisible()
+        {
+            return WebDriverExtensions.IsElementVisible(errorMessage);
         }
     }
 }
