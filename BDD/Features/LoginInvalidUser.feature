@@ -2,7 +2,7 @@
 
 As user I should see error message when I'm loged with incorrect credentials
 
-@login
+@Login
 Scenario: InvalidCredentialsLogin
 	Given I should see Login page
 	When When I put in invalid credentials (<login> or <password>)

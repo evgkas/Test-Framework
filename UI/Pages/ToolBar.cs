@@ -8,6 +8,7 @@ namespace Test_Automation_Project.Pages
         private static By fragranceCategory = By.XPath("//*[@data-cypress=\"mainMenu-Fragrance\"]");
         private static By bascketButton = By.XPath("//*[@data-cypress=\"cart-info\"]/div");
         private static By mainLogo = By.XPath("//*[@aria-label=\"Notino logo\"]");
+        private static By searchField = By.XPath("//*[@type=\"search\"]");
 
         public void HoverFragrance()
         {
@@ -24,6 +25,14 @@ namespace Test_Automation_Project.Pages
         {
             WebDriverExtensions.ClickOnElement(mainLogo);
             return new MainPage();
+        }
+
+        public ProductsPage Search(string request)
+        {
+            WebDriverExtensions.SendKeysToElement(searchField, request);
+            WebDriverExtensions.ClickOnEnter(searchField);
+
+            return new ProductsPage();
         }
     }
 }
