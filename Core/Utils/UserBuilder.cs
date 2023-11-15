@@ -1,6 +1,6 @@
-﻿using Test_Automation_Project.Model;
+﻿using Test_Automation_Project.Core.Model;
 
-namespace Test_Automation_Project.Utils
+namespace Test_Automation_Project.Core.Utils
 {
     public static class UserBuilder
     {

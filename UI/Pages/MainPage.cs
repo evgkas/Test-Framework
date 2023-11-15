@@ -23,10 +23,10 @@ namespace Test_Automation_Project.Pages
             return new MainPage();
         }
 
-        public SalePage ToSales()
+        public ProductsPage ToSales()
         {
             WebDriverExtensions.ClickOnElement(saleCategory);
-            return new SalePage();
+            return new ProductsPage();
         }
 
         public bool IsVisible()
